@@ -1,0 +1,33 @@
+@layer tailwind {
+  @tailwind base;
+}
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: March;
+    font-weight: normal;
+    font-style: normal;
+    src: url(../../static/fonts/March/March.woff2) format('woff2');
+    src: url(../../static/fonts/March/March.woff) format('woff'),
+          url(../../static/fonts/March/March.ttf) format('truetype'),
+          url(../../static/fonts/March/March.eot?#iefix) format('embedded-opentype'),
+          url(../../static/fonts/March/March.svg#March) format('svg');
+  }
+}
+
+.font-logo {
+  font-family: March, sans;
+}
+
+:root {
+  background-color: theme(colors.white);
+  font-size: 18px;
+}
+
+.ownername {
+  font-family: March, sans;
+  font-size: 2.5rem;
+  color:theme(colors.blue.500);
+}
