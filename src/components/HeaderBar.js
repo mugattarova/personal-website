@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/global.css';
-import { graphql } from 'gatsby';
+import { navigate } from 'gatsby';
 import Link from './elements/Link';
 
 const linkslist = [
@@ -17,33 +17,27 @@ function HeaderBar() {
     </Link>
   ));
 
+  const goToMain = () => {
+    navigate('/');
+  }
+
   return (
-    // <div className='w-full bg-lilac/50 backdrop-blur-md p-3'>
-    //   <div className='flex'>
-    //     <div className='font-logo text-dark-blue justify-start text-3xl tracking-wide'>
-    //       Nelli Mugattarova
-    //     </div>
-    //     <div>
-    //       {items}
-    //     </div>
-    //   </div>
-    // </div>
-  <nav className='bg-lilac-500/30 sticky top-0 backdrop-blur-sm min-w-fit mx-auto px-8 py-5'>
-    <div className='flex justify-evenly'>
-      
-      <div className='flex-1 font-logo text-dark-blue justify-start text-3xl tracking-wide'>
-        Nelli Mugattarova
-      </div>
-
-      <div className='flex-1 ml-6 justify-self-end'>
-        <div className='flex space-x-4'>
-          {items}
+    <nav className='sticky top-0 backdrop-blur-sm min-w-fit mx-auto px-8 py-5'>
+      <div className='w-full flex justify-between'>
+        
+        <div className='font-logo text-blue-munsell-900 text-3xl tracking-wide cursor-pointer pl-2'
+            onClick={goToMain}>
+          Nelli Mugattarova
         </div>
+
+        <div className='pr-2'>
+          <div className='flex space-x-10'>
+            {items}
+          </div>
+        </div>
+
       </div>
-
-    </div>
-  </nav>
-
+    </nav>
   );
 }
 

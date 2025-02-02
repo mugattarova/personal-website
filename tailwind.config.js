@@ -8,13 +8,18 @@ export const content = [
 export const theme = {
   extend: {
     backgroundImage: {
-      'hero': "url('/img/purple-blue-abstract-bg.png')",
+      'main-img': "url('../img/abstract-bg-dupl-friendly.png')",
+      'main-img-inv': "url('../img/abstract-bg-dupl-friendly-inv.png')",
+      'main-img-blur': "url('../img/abstract-bg-dupl-friendly-blur.png')",
     },
     textDecorationThickness: {
       1: '1px',
     },
   },
   colors: {
+    'text-color': 'jordy-blue',
+    'white': colors.white,
+    'black': colors.black,
     'offwhite': '#f4f5f6',
     'periwinkle': '#cfd7fe',
     'jordy-blue': '#97c3f2',

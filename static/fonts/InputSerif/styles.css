@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'InputSerif-Black';
+  src: url(./InputSerif-Black.eot);
+  src: url(./InputSerif-Black.eot?#iefix) format('embedded-opentype'),
+       url(./InputSerif-Black.otf) format('otf'),
+       url(./InputSerif-Black.svg#InputSerif-Black) format('svg'),
+       url(./InputSerif-Black.woff) format('woff'),
+       url(./InputSerif-Black.woff2) format('woff2');
+}

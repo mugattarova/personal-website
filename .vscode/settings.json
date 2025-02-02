@@ -8,4 +8,9 @@
     "**/*.sass",
     "**/*.less"
   ],
+  "cSpell.words": [
+    "dupl",
+    "inputmono",
+    "inputserif"
+  ],
 }
