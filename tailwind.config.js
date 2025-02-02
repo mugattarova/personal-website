@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import colors from 'tailwindcss/colors';
+import colors, { transparent } from 'tailwindcss/colors';
 
 export const content = [
   './src/pages/**/*.{js,jsx,ts,tsx}',
@@ -14,13 +14,21 @@ export const theme = {
     },
     textDecorationThickness: {
       1: '1px',
-    },
+    }, 
+    gradientColorStops: ({ theme }) => ({
+      'logo-gradient': [
+        theme('colors.periwinkle'),
+        theme('colors.lilac.500'),
+        theme('colors.carolina-blue'),
+        theme('colors.blue-munsell.300'),
+      ]
+    }),
   },
   colors: {
-    'text-color': 'jordy-blue',
+    transparent: colors.transparent,
     'white': colors.white,
     'black': colors.black,
-    'offwhite': '#f4f5f6',
+    'offwhite': '#eeedf3',
     'periwinkle': '#cfd7fe',
     'jordy-blue': '#97c3f2',
     'carolina-blue': '#7cb4cf',

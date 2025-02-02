@@ -4,8 +4,8 @@ import { navigate } from 'gatsby';
 import Link from './elements/Link';
 
 const linkslist = [
-  { link: '/', label: 'Home' },
-  { link: '/404', label: '404 Page' },
+  { link: '/', label: 'home' },
+  { link: '/about', label: 'about' },
 ];
 
 function HeaderBar() {
@@ -22,18 +22,16 @@ function HeaderBar() {
   }
 
   return (
-    <nav className='sticky top-0 backdrop-blur-sm min-w-fit mx-auto px-8 py-5'>
-      <div className='w-full flex justify-between'>
+    <nav className='sticky top-0 flex justify-center backdrop-blur-md bg-offwhite/20 min-w-fit mx-auto px-8 py-7'>
+      <div className='w-9/12 flex justify-between'>
         
-        <div className='font-logo text-blue-munsell-900 text-3xl tracking-wide cursor-pointer pl-2'
-            onClick={goToMain}>
+        <div className='font-logo text-blue-munsell-900 text-2xl tracking-wide cursor-pointer'
+            onClick={goToMain} onKeyDown={goToMain}>
           Nelli Mugattarova
         </div>
 
-        <div className='pr-2'>
-          <div className='flex space-x-10'>
-            {items}
-          </div>
+        <div className='flex space-x-10'>
+          {items}
         </div>
 
       </div>

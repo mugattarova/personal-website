@@ -1,23 +1,18 @@
-import * as React from 'react'
-import Link from '../components/elements/Link'
-import Layout from '../components/Layout'
-import '../styles/global.css'
+import * as React from 'react';
+import Layout from '../components/Layout';
+import '../styles/global.css';
+import Link from '../components/elements/Link';
 
 const NotFoundPage = () => {
   return (
-    <Layout>
-      <main>
-        <h1>Page not found</h1>
-        <p>
-          Sorry 😔, we couldn’t find what you were looking for.
-          <br />
-          <Link to="/">Go home</Link>.
-        </p>
-      </main>
+    <Layout pagetitle={'404 Page not found'}>
+      <div>
+        nothing's here! check out my <Link to='/'> work </Link>
+      </div>
     </Layout>
   )
-}
+};
 
-export default NotFoundPage
+export default NotFoundPage;
 
-export const Head = () => <title>Not found</title>
+export const Head = () => <title>Not found</title>;

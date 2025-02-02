@@ -15,92 +15,11 @@
           url(../../static/fonts/March/March.eot?#iefix) format('embedded-opentype'),
           url(../../static/fonts/March/March.svg#March) format('svg');
   }
-
-  @font-face {
-    font-family: 'InputMono';
-    font-weight: normal;
-    font-style: normal;
-    src: url(../../static/fonts/InputMono/InputMono-Regular.woff2) format('woff2');
-    src: url(../../static/fonts/InputMono/InputMono-Regular.woff) format('woff'),
-         url(../../static/fonts/InputMono/InputMono-Regular.eot?#iefix) format('embedded-opentype'),
-         url(../../static/fonts/InputMono/InputMono-Regular.otf) format('otf'),
-         url(../../static/fonts/InputMono/InputMono-Regular.svg#InputMono-Regular) format('svg');         
-  }
-  @font-face {
-    font-family: 'InputMono';
-    font-weight: normal;
-    font-style: italic;
-    src: url(../../static/fonts/InputMono/InputMono-Italic.woff2) format('woff2');
-    src: url(../../static/fonts/InputMono/InputMono-Italic.woff) format('woff'),
-         url(../../static/fonts/InputMono/InputMono-Italic.eot?#iefix) format('embedded-opentype'),
-         url(../../static/fonts/InputMono/InputMono-Italic.otf) format('otf'),
-         url(../../static/fonts/InputMono/InputMono-Italic.svg#InputMono-Italic) format('svg');         
-  }  
-  @font-face {
-    font-family: 'InputMono';
-    font-weight: bold;
-    font-style: normal;
-    src: url(../../static/fonts/InputMono/InputMono-Bold.woff2) format('woff2');
-    src: url(../../static/fonts/InputMono/InputMono-Bold.woff) format('woff'),
-         url(../../static/fonts/InputMono/InputMono-Bold.eot?#iefix) format('embedded-opentype'),
-         url(../../static/fonts/InputMono/InputMono-Bold.otf) format('otf'),
-         url(../../static/fonts/InputMono/InputMono-Bold.svg#InputMono-Bold) format('svg');         
-  }
-  @font-face {
-    font-family: 'InputMono';
-    font-weight: bold;
-    font-style: italic;
-    src: url(../../static/fonts/InputMono/InputMono-BoldItalic.woff2) format('woff2');
-    src: url(../../static/fonts/InputMono/InputMono-BoldItalic.woff) format('woff'),
-         url(../../static/fonts/InputMono/InputMono-BoldItalic.eot?#iefix) format('embedded-opentype'),
-         url(../../static/fonts/InputMono/InputMono-BoldItalic.otf) format('otf'),
-         url(../../static/fonts/InputMono/InputMono-BoldItalic.svg#InputMono-BoldItalic) format('svg');         
-  }
-
-  @font-face {
-    font-family: 'InputSerif';
-    font-weight: normal;
-    font-style: normal;
-    src: url(../../static/fonts/InputSerif/InputSerif-Medium.woff2) format('woff2');
-    src: url(../../static/fonts/InputSerif/InputSerif-Medium.woff) format('woff'),
-         url(../../static/fonts/InputSerif/InputSerif-Medium.eot?#iefix) format('embedded-opentype'),
-         url(../../static/fonts/InputSerif/InputSerif-Medium.otf) format('otf'),
-         url(../../static/fonts/InputSerif/InputSerif-Medium.svg#InputSerif-Medium) format('svg');         
-  }
-  @font-face {
-    font-family: 'InputSerif';
-    font-weight: normal;
-    font-style: italic;
-    src: url(../../static/fonts/InputSerif/InputSerif-MediumItalic.woff2) format('woff2');
-    src: url(../../static/fonts/InputSerif/InputSerif-MediumItalic.woff) format('woff'),
-         url(../../static/fonts/InputSerif/InputSerif-MediumItalic.eot?#iefix) format('embedded-opentype'),
-         url(../../static/fonts/InputSerif/InputSerif-MediumItalic.otf) format('otf'),
-         url(../../static/fonts/InputSerif/InputSerif-MediumItalic.svg#InputSerif-MediumItalic) format('svg');         
-  }  
-  @font-face {
-    font-family: 'InputSerif';
-    font-weight: bold;
-    font-style: normal;
-    src: url(../../static/fonts/InputSerif/InputSerif-Black.woff2) format('woff2');
-    src: url(../../static/fonts/InputSerif/InputSerif-Black.woff) format('woff'),
-         url(../../static/fonts/InputSerif/InputSerif-Black.eot?#iefix) format('embedded-opentype'),
-         url(../../static/fonts/InputSerif/InputSerif-Black.otf) format('otf'),
-         url(../../static/fonts/InputSerif/InputSerif-Black.svg#InputSerif-Black) format('svg');         
-  }
-  @font-face {
-    font-family: 'InputSerif';
-    font-weight: bold;
-    font-style: italic;
-    src: url(../../static/fonts/InputSerif/InputSerif-BlackItalic.woff2) format('woff2');
-    src: url(../../static/fonts/InputSerif/InputSerif-BlackItalic.woff) format('woff'),
-         url(../../static/fonts/InputSerif/InputSerif-BlackItalic.eot?#iefix) format('embedded-opentype'),
-         url(../../static/fonts/InputSerif/InputSerif-BlackItalic.otf) format('otf'),
-         url(../../static/fonts/InputSerif/InputSerif-BlackItalic.svg#InputSerif-BlackItalic) format('svg');         
-  }
   
   .font-logo{ font-family: March, sans-serif; }
-  .font-inputmono{ font-family: InputMono, monospace; }
-  .font-inputserif{ font-family: InputSerif, serif; }
+  .font-ptmono{ font-family: 'PT Mono', monospace; }
+
+  .min-w-home{ min-width: calc(theme(width.full) * 0.45); }
 
   .blur-bottom{ 
     @apply bg-main-img-blur h-full;
@@ -111,7 +30,6 @@
     right: 0;
     mask: linear-gradient(black, 65%, transparent); 
   }
-
   .blur-top {
     @apply bg-main-img-blur h-full;
     position: absolute;
@@ -123,8 +41,8 @@
   }
 
   html { 
-    font-size: 112.5%;
-    @apply text-blue-munsell-950 font-inputmono tracking-wider leading-relaxed;
+    font-size: 125%;
+    @apply text-blue-munsell-950 font-ptmono font-normal tracking-wider leading-relaxed;
   }
 
   ::selection {
