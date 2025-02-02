@@ -15,19 +15,9 @@
           url(../../static/fonts/March/March.eot?#iefix) format('embedded-opentype'),
           url(../../static/fonts/March/March.svg#March) format('svg');
   }
-}
-
-.font-logo {
-  font-family: March, sans;
+  .font-logo{ font-family: March, sans-serif}
 }
 
 :root {
-  background-color: theme(colors.white);
-  font-size: 18px;
-}
-
-.ownername {
-  font-family: March, sans;
-  font-size: 2.5rem;
-  color:theme(colors.blue.500);
+  background-color: theme(colors.offwhite);
 }

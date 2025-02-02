@@ -1,6 +1,7 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
 import '../styles/global.css';
+import { graphql } from 'gatsby';
+import Link from './elements/Link';
 
 const linkslist = [
   { link: '/', label: 'Home' },
@@ -11,20 +12,38 @@ function HeaderBar() {
   const items = linkslist.map((link) => (
     <Link
       to={link.link}
-      className=''
     >
-      {link.label}{' '}
+      {link.label}
     </Link>
   ));
 
   return (
-    <header className='w-full text-center border-b border-grey p-4'>
-      <div>
-        <h2 className='font-logo text-sky-800 text-3xl'>
-          Nelli Mugattarova
-        </h2>
+    // <div className='w-full bg-lilac/50 backdrop-blur-md p-3'>
+    //   <div className='flex'>
+    //     <div className='font-logo text-dark-blue justify-start text-3xl tracking-wide'>
+    //       Nelli Mugattarova
+    //     </div>
+    //     <div>
+    //       {items}
+    //     </div>
+    //   </div>
+    // </div>
+  <nav className='bg-lilac-500/30 sticky top-0 backdrop-blur-sm min-w-fit mx-auto px-8 py-5'>
+    <div className='flex justify-evenly'>
+      
+      <div className='flex-1 font-logo text-dark-blue justify-start text-3xl tracking-wide'>
+        Nelli Mugattarova
       </div>
-    </header>
+
+      <div className='flex-1 ml-6 justify-self-end'>
+        <div className='flex space-x-4'>
+          {items}
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
   );
 }
 
