@@ -8,9 +8,9 @@ export const content = [
 export const theme = {
   extend: {
     backgroundImage: {
-      'main-img': "url('../img/abstract-bg-dupl-friendly.png')",
-      'main-img-inv': "url('../img/abstract-bg-dupl-friendly-inv.png')",
-      'main-img-blur': "url('../img/abstract-bg-dupl-friendly-blur.png')",
+      'main-img': "url('../../static/img/abstract-bg-dupl-friendly.png')",
+      'main-img-inv': "url('../../static/img/abstract-bg-dupl-friendly-inv.png')",
+      'main-img-blur': "url('../../static/img/abstract-bg-dupl-friendly-blur.png')",
     },
     textDecorationThickness: {
       1: '1px',

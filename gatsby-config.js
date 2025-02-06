@@ -13,19 +13,25 @@ module.exports = {
     "gatsby-plugin-sharp", 
     "gatsby-transformer-sharp", 
     "gatsby-plugin-postcss",
+    "gatsby-transformer-remark",
     {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "img",
-      "path": "./src/img/"
+      "path": "./static/img/"
     },
-    __key: "images"
   }, {
     resolve: 'gatsby-source-filesystem',
     options: {
-      "name": "pages",
-      "path": "./src/pages/"
+      "name": "blog-posts",
+      "path": "./static/blog-posts/"
     },
-    __key: "pages"
-  }]
+  }, {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "projects",
+      "path": "./static/projects/"
+    },
+  }
+]
 };

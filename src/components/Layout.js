@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderBar from './HeaderBar';
 import '../styles/global.css';
 
-const Layout = ({ children, pagetitle }) => {
+export default function Layout({ children, pagetitle }) {
   return (
     <div className='overscroll-contain min-h-screen'>
       <HeaderBar/>
@@ -20,6 +20,4 @@ const Layout = ({ children, pagetitle }) => {
       </div>
     </div>
   )
-}
-
-export default Layout;
+};

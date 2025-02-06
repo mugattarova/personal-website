@@ -8,7 +8,7 @@ const linkslist = [
   { link: '/about', label: 'about' },
 ];
 
-function HeaderBar() {
+export default function HeaderBar() {
   const items = linkslist.map((link) => (
     <Link
       to={link.link}
@@ -37,6 +37,4 @@ function HeaderBar() {
       </div>
     </nav>
   );
-}
-
-export default HeaderBar;
+};
