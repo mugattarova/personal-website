@@ -10,7 +10,7 @@ const NotFoundPage = () => {
         nothing's here! check out my <Link to='/'> work </Link>
       </div>
     </Layout>
-  )
+  );
 };
 
 export default NotFoundPage;

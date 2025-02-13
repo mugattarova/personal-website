@@ -4,20 +4,18 @@ import '../styles/global.css';
 
 export default function Layout({ children, pagetitle }) {
   return (
-    <div className='overscroll-contain min-h-screen'>
-      <HeaderBar/>
+    <div className='min-h-screen overscroll-contain'>
+      <HeaderBar />
       <div className='flex w-full justify-center'>
-        <div className='flex flex-col min-w-home'>
-          {pagetitle ? 
-            <div className='font-ptmono font-bold text-lilac-800 py-20 text-4xl'>
-              { pagetitle }
+        <div className='min-w-home flex flex-col'>
+          {pagetitle ? (
+            <div className='font-ptmono py-20 text-4xl font-bold text-lilac-800'>
+              {pagetitle}
             </div>
-          : null }
-          <main className='max-w-[750px]'>
-            { children }
-          </main> 
+          ) : null}
+          <main className='max-w-[750px]'>{children}</main>
         </div>
       </div>
     </div>
-  )
-};
+  );
+}

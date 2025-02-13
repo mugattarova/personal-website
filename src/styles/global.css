@@ -10,46 +10,58 @@
     font-weight: normal;
     font-style: normal;
     src: url(../../static/fonts/March/March.woff2) format('woff2');
-    src: url(../../static/fonts/March/March.woff) format('woff'),
-          url(../../static/fonts/March/March.ttf) format('truetype'),
-          url(../../static/fonts/March/March.eot?#iefix) format('embedded-opentype'),
-          url(../../static/fonts/March/March.svg#March) format('svg');
+    src:
+      url(../../static/fonts/March/March.woff) format('woff'),
+      url(../../static/fonts/March/March.ttf) format('truetype'),
+      url(../../static/fonts/March/March.eot?#iefix)
+        format('embedded-opentype'),
+      url(../../static/fonts/March/March.svg#March) format('svg');
   }
-  
-  .font-logo{ font-family: March, sans-serif; }
-  .font-ptmono{ font-family: 'PT Mono', monospace; }
 
-  .min-w-home{ min-width: calc(theme(width.full) * 0.45); }
+  .font-logo {
+    font-family: March, sans-serif;
+  }
+  .font-ptmono {
+    font-family: 'PT Mono', monospace;
+  }
 
-  .blur-bottom{ 
-    @apply bg-main-img-blur h-full;
+  .min-w-home {
+    min-width: calc(theme(width.full) * 0.45);
+  }
+
+  .blur-bottom {
+    @apply h-full bg-main-img-blur;
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     right: 0;
-    mask: linear-gradient(black, 65%, transparent); 
+    mask: linear-gradient(black, 65%, transparent);
   }
   .blur-top {
-    @apply bg-main-img-blur h-full;
+    @apply h-full bg-main-img-blur;
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     right: 0;
-    mask: linear-gradient(transparent, 65%, black); 
+    mask: linear-gradient(transparent, 65%, black);
   }
 
-  html { 
+  html {
     font-size: 125%;
-    @apply text-blue-munsell-950 font-ptmono font-normal tracking-wider leading-relaxed;
+    @apply font-ptmono font-normal leading-relaxed tracking-wider text-blue-munsell-950;
   }
 
   ::selection {
-    @apply text-blue-munsell-100 bg-blue-munsell-900;
+    @apply bg-blue-munsell-900 text-blue-munsell-100;
   }
 }
 
 :root {
   @apply bg-offwhite;
+}
+
+hr {
+  @apply border-gray-300;
 }
