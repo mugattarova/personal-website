@@ -29,6 +29,10 @@
     min-width: calc(theme(width.full) * 0.45);
   }
 
+  .max-w-home {
+    max-width: calc(theme(width.full) * 0.45);
+  }
+
   .blur-bottom {
     @apply h-full bg-main-img-blur;
     position: absolute;
@@ -63,5 +67,5 @@
 }
 
 hr {
-  @apply border-gray-300;
+  @apply border-blue-munsell-900;
 }

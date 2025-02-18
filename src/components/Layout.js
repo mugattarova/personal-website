@@ -1,10 +1,11 @@
 import React from 'react';
 import HeaderBar from './HeaderBar';
 import '../styles/global.css';
+import Footer from './Footer';
 
 export default function Layout({ children, pagetitle }) {
   return (
-    <div className='min-h-screen overscroll-contain'>
+    <div className='h-full min-h-screen overscroll-contain'>
       <HeaderBar />
       <div className='flex w-full justify-center'>
         <div className='min-w-home flex flex-col'>
@@ -16,6 +17,7 @@ export default function Layout({ children, pagetitle }) {
           <main className='max-w-[750px]'>{children}</main>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
