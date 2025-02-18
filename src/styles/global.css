@@ -25,12 +25,8 @@
     font-family: 'PT Mono', monospace;
   }
 
-  .min-w-home {
-    min-width: calc(theme(width.full) * 0.45);
-  }
-
-  .max-w-home {
-    max-width: calc(theme(width.full) * 0.45);
+  .w-home {
+    width: 900px;
   }
 
   .blur-bottom {
@@ -67,5 +63,5 @@
 }
 
 hr {
-  @apply border-blue-munsell-900;
+  @apply border-blue-munsell-700/70;
 }
