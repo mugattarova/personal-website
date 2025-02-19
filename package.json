@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "description": "nelli-mugattarova",
-  "author": "mugattarova",
-  "keywords": [
-    "gatsby"
-  ],
+  "author": "Nelli Mugattarova",
+  "keywords": [],
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -15,7 +13,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@mdx-js/react": "^3.1.0",
+    "@mdx-js/react": "^2.0.0",
     "gatsby": "^5.14.1",
     "gatsby-plugin-image": "^3.14.0",
     "gatsby-plugin-mdx": "^5.14.0",

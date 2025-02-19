@@ -4,7 +4,7 @@ import { navigate } from 'gatsby';
 import Link from './elements/Link';
 
 const linkslist = [
-  { link: '/', label: 'home' },
+  { link: '/', label: 'work' },
   { link: '/about', label: 'about' },
 ];
 

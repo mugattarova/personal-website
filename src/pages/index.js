@@ -3,10 +3,10 @@ import { graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../components/Layout';
 import '../styles/global.css';
+import TabTitle from '../components/elements/TabTitle';
 
-function HomePage({ data }) {
+export default function HomePage({ data }) {
   const projects = data.allFile.nodes.map((projectmdx) => {
-    const id = projectmdx.childMdx.id;
     const project = projectmdx.childMdx.frontmatter;
 
     return (
@@ -53,12 +53,6 @@ function HomePage({ data }) {
         </div>
         <hr />
         <div className='flex flex-col py-24'>{projects}</div>
-
-        {/* 
-        school projects?
-        machine learning grind and display
-        data science thing?
-        pathfinding visualizers */}
       </div>
     </Layout>
   );
@@ -66,6 +60,11 @@ function HomePage({ data }) {
 
 export const query = graphql`
   query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allFile(
       filter: {
         sourceInstanceName: { eq: "projects" }
@@ -99,5 +98,6 @@ export const query = graphql`
   }
 `;
 
-export default HomePage;
-export const Head = () => <title>Home Page | </title>;
+export const Head = ({ data }) => (
+  <TabTitle data={data}>Home Page</TabTitle>
+);

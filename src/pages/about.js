@@ -2,8 +2,10 @@ import React from 'react';
 import Layout from '../components/Layout';
 import '../styles/global.css';
 import { StaticImage } from 'gatsby-plugin-image';
+import TabTitle from '../components/elements/TabTitle';
+import { graphql } from 'gatsby';
 
-const AboutPage = () => {
+export default function AboutPage() {
   return (
     <Layout pagetitle={'Hello, hello!'}>
       <div className=''>
@@ -30,8 +32,18 @@ const AboutPage = () => {
       </div>
     </Layout>
   );
-};
+}
 
-export default AboutPage;
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;
 
-export const Head = () => <title>About</title>;
+export const Head = ({ data }) => (
+  <TabTitle data={data}>About</TabTitle>
+);
