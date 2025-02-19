@@ -9,7 +9,7 @@ export const SOCIALS_LINKS = [
   },
   {
     label: 'email',
-    link: 'mailto:mugattarova@gmail.com',
+    link: 'mailto:hi@nellimugattarova.com',
   },
   {
     label: 'website',
