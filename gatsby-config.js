@@ -2,7 +2,7 @@
 module.exports = {
   siteMetadata: {
     title: `Nelli Mugattarova`,
-    siteUrl: process.env.NODE_ENV.GATSBY_API_URL,
+    siteUrl: process.env.GATSBY_API_URL,
     description: `A personal website and portfolio of Nelli Mugattarova, a software engineer.`,
   },
   plugins: [
