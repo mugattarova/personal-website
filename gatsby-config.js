@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `Nelli Mugattarova`,
-    siteUrl: `nellimugattarova.com`,
+    siteUrl: `personalwebsitenm.netlify.com`,
   },
   plugins: [
     'gatsby-plugin-image',
