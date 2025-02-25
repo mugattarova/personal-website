@@ -8,7 +8,7 @@ const NotFoundPage = () => {
     <Layout pagetitle={'404 Page not found'}>
       <div className='h-screen'>
         nothing's here! check out my{' '}
-        <EmbeddedLink to='/'> work </EmbeddedLink>
+        <EmbeddedLink to='/'>work</EmbeddedLink>
       </div>
     </Layout>
   );

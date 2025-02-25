@@ -25,10 +25,6 @@
     font-family: 'PT Mono', monospace;
   }
 
-  .w-home {
-    width: 900px;
-  }
-
   .blur-bottom {
     @apply h-full bg-main-img-blur;
     position: absolute;
@@ -48,9 +44,13 @@
     mask: linear-gradient(transparent, 65%, black);
   }
 
+  .main-body-text {
+    @apply text-xl md:text-base;
+  }
+
   html {
     font-size: 125%;
-    @apply font-ptmono font-normal leading-relaxed tracking-wider text-blue-munsell-950;
+    @apply font-ptmono text-2xl font-normal leading-relaxed tracking-wider text-blue-munsell-950 md:text-base;
   }
 
   ::selection {

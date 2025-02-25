@@ -4,8 +4,11 @@ import '../styles/global.css';
 import { StaticImage } from 'gatsby-plugin-image';
 import TabTitle from '../components/elements/TabTitle';
 import { graphql } from 'gatsby';
+import { SOCIALS_LINKS } from '../components/constants';
+import { EmbeddedLink } from '../components/elements/Link';
 
 export default function AboutPage() {
+  const email = SOCIALS_LINKS.find((link) => link.label === 'email');
   return (
     <Layout pagetitle={'Hello, hello!'}>
       <div className=''>
@@ -13,9 +16,9 @@ export default function AboutPage() {
           <StaticImage
             src='../../static/img/pfp_winter_kazan.jpg'
             alt='Photo of Nelli Mugattarova'
-            className='float-left mb-14 mr-14 h-52 w-52 rounded-lg align-middle shadow-2xl shadow-jordy-blue/90'
+            className='float-left mb-14 mr-14 aspect-square w-80 rounded-lg align-middle shadow-2xl shadow-jordy-blue/90'
           />
-          <div className='text-sm'>
+          <div className=''>
             I'm a life-long learner that likes to help people and
             share knowledge. I love to make things, whether it be a
             website or a Baby Yoda plushie.
@@ -29,6 +32,16 @@ export default function AboutPage() {
             hikes, and visit capybaras at the local zoo.
           </div>
         </div>
+      </div>
+
+      <div className='text-center text-xl'>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        get in touch at{' '}
+        <EmbeddedLink to={email.link}>{email.address}</EmbeddedLink>
       </div>
     </Layout>
   );

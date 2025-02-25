@@ -1,24 +1,29 @@
 import React from 'react';
 import '../styles/global.css';
 import { SOCIALS_LINKS } from './constants';
+import Link from './elements/Link';
 
 export default function Footer() {
   const items = SOCIALS_LINKS.map((link) => (
-    <a
-      href={link.link}
-      className='text-blue-munsell-900 decoration-lilac-700 decoration-solid decoration-2 underline-offset-8 hover:text-lilac-800 hover:underline'
-    >
-      {link.label}
-    </a>
+    <div className='text-right'>
+      <Link to={link.link}>{link.label}</Link>
+    </div>
   ));
 
   return (
-    <div className='relative bottom-0 min-w-full'>
-      <div className='mb-20'></div>
-      <hr className='w-home m-auto' />
-      <div className='z-50 mx-auto mt-4 bg-gradient-to-t from-lilac-500/60 px-8 pb-14 pt-28'>
-        <div className='w-home mx-auto flex justify-end'>
-          <div className='space-x-10'>{items}</div>
+    <div className='relative bottom-0'>
+      <div className='md:mb-40'></div>
+      <div className='m-auto px-12 md:w-2/5 md:p-0'>
+        <hr className='invisible m-auto md:visible' />
+
+        <div className='mt-4 pt-20 md:pt-28'>
+          <div className='absolute left-0 h-full w-full bg-gradient-to-t from-lilac-500/60'></div>
+
+          <div className='relative mx-auto flex w-full justify-end'>
+            <div className='grid grid-cols-1 gap-4 md:flex md:flex-row-reverse md:flex-wrap lg:gap-10'>
+              {items}
+            </div>
+          </div>
         </div>
       </div>
     </div>

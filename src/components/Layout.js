@@ -5,16 +5,16 @@ import Footer from './Footer';
 
 export default function Layout({ children, pagetitle }) {
   return (
-    <div className='min-h-dvh overscroll-contain'>
+    <div className=''>
       <HeaderBar />
-      <div className='flex w-full justify-center'>
-        <div className='w-home m-auto flex flex-col'>
+      <div className='flex justify-center'>
+        <div className='m-auto flex w-5/6 max-w-3xl flex-1 flex-col px-5 md:px-4 lg:w-8/12'>
           {pagetitle ? (
             <div className='font-ptmono py-20 text-4xl font-bold text-lilac-800'>
               {pagetitle}
             </div>
           ) : null}
-          <main className='p-4'>{children}</main>
+          <main className=''>{children}</main>
         </div>
       </div>
       <Footer />

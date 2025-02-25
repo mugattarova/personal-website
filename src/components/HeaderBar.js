@@ -18,17 +18,17 @@ export default function HeaderBar() {
   };
 
   return (
-    <nav className='sticky top-0 z-50 mx-auto flex min-w-fit justify-center bg-offwhite/20 px-8 py-6 backdrop-blur-md'>
-      <div className='flex w-9/12 justify-between'>
+    <nav className='relative z-50 mx-auto flex w-full min-w-fit justify-center bg-offwhite/20 px-8 py-6 backdrop-blur-md md:sticky md:top-0'>
+      <div className='flex w-9/12 justify-around md:justify-between'>
         <div
-          className='font-logo cursor-pointer text-2xl tracking-wide text-blue-munsell-900'
+          className='font-logo hidden cursor-pointer text-2xl tracking-wide text-blue-munsell-900 md:inline'
           onClick={goToMain}
           onKeyDown={goToMain}
         >
           Nelli Mugattarova
         </div>
 
-        <div className='flex space-x-10'>{items}</div>
+        <div className='contents md:flex md:space-x-10'>{items}</div>
       </div>
     </nav>
   );
