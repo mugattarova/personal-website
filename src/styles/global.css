@@ -50,7 +50,11 @@
 
   html {
     font-size: 125%;
-    @apply font-ptmono text-2xl font-normal leading-relaxed tracking-wider text-blue-munsell-950 md:text-base;
+    @apply font-ptmono m-0 p-0 text-2xl font-normal leading-relaxed tracking-wider text-blue-munsell-950 md:text-base;
+  }
+
+  body {
+    @apply m-0 p-0;
   }
 
   ::selection {

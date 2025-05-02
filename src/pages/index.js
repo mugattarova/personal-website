@@ -10,7 +10,7 @@ export default function HomePage({ data }) {
     const project = projectmdx.childMdx.frontmatter;
 
     return (
-      <div className='mx-auto flex w-auto max-w-2xl flex-col items-center gap-8 p-4 md:flex-row'>
+      <div className='mx-auto flex w-full max-w-2xl flex-col items-center gap-8 p-4 md:flex-row'>
         <div className='md:shrink-0'>
           <GatsbyImage
             image={getImage(project.picture)}
@@ -59,7 +59,7 @@ export default function HomePage({ data }) {
         </div>
         <hr className='md:mx-auto md:max-w-xl' />
 
-        <div className='mx-auto mt-14 grid grid-cols-1 gap-20 md:mt-24 md:gap-32'>
+        <div className='mx-auto my-14 flex flex-col justify-start gap-20 md:my-24 md:gap-28'>
           {projects}
         </div>
       </div>

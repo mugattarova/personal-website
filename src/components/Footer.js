@@ -12,13 +12,12 @@ export default function Footer() {
 
   return (
     <div className='relative bottom-0'>
-      <div className='md:mb-40'></div>
+      <div className=''></div>
       <div className='m-auto px-12 md:w-2/5 md:p-0'>
         <hr className='invisible m-auto md:visible' />
 
-        <div className='mt-4 pt-20 md:pt-28'>
-          <div className='absolute left-0 h-full w-full bg-gradient-to-t from-lilac-500/60'></div>
-
+        <div className='absolute left-0 h-full w-full bg-gradient-to-t from-lilac-500/60'></div>
+        <div className='mt-4 py-20 md:py-28'>
           <div className='relative mx-auto flex w-full justify-end'>
             <div className='grid grid-cols-1 gap-4 md:flex md:flex-row-reverse md:flex-wrap lg:gap-10'>
               {items}

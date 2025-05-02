@@ -16,7 +16,7 @@ export default function AboutPage() {
           <StaticImage
             src='../../static/img/pfp_winter_kazan.jpg'
             alt='Photo of Nelli Mugattarova'
-            className='float-left mb-14 mr-14 aspect-square w-80 rounded-lg align-middle shadow-2xl shadow-jordy-blue/90'
+            className='float-left mb-14 mr-14 aspect-square w-full rounded-lg align-middle shadow-2xl shadow-jordy-blue/90 md:w-80'
           />
           <div className=''>
             I'm a life-long learner that likes to help people and
@@ -43,6 +43,7 @@ export default function AboutPage() {
         get in touch at{' '}
         <EmbeddedLink to={email.link}>{email.address}</EmbeddedLink>
       </div>
+      <div className='pt-14 md:pt-28'></div>
     </Layout>
   );
 }

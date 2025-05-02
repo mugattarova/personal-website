@@ -17,7 +17,7 @@ export function EmbeddedLink({ to, children }) {
   return (
     <GatsbyLink
       to={to}
-      className='text-jordy-blue-500 decoration-lilac-700 decoration-solid decoration-2 underline-offset-8 hover:text-lilac-800 hover:underline'
+      className='text-sm text-jordy-blue-500 decoration-lilac-700 decoration-solid decoration-2 underline-offset-8 hover:text-lilac-800 hover:underline md:text-xl'
     >
       {children}
     </GatsbyLink>

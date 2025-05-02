@@ -8,7 +8,7 @@ export default function Layout({ children, pagetitle }) {
     <div className=''>
       <HeaderBar />
       <div className='flex justify-center'>
-        <div className='m-auto flex w-5/6 max-w-3xl flex-1 flex-col px-5 md:px-4 lg:w-8/12'>
+        <div className='mx-4 flex w-5/6 max-w-3xl flex-1 flex-col px-5 md:m-auto md:px-4 lg:w-8/12'>
           {pagetitle ? (
             <div className='font-ptmono py-20 text-4xl font-bold text-lilac-800'>
               {pagetitle}
