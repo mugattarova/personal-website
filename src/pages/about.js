@@ -19,6 +19,9 @@ export default function AboutPage() {
             className='float-left mb-14 mr-14 aspect-square w-full rounded-lg align-middle shadow-2xl shadow-jordy-blue/90 md:w-80'
           />
           <div className=''>
+            Software engineer, based in Paphos, Cyprus.
+            <br />
+            <br />
             I'm a life-long learner that likes to help people and
             share knowledge. I love to make things, whether it be a
             website or a Baby Yoda plushie.
